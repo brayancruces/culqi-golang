@@ -48,12 +48,12 @@ Importando culqi-go:
 
 ```go
 import (    
-    culqi "github.com/brayancruces/culqi-go"
-    {{recurso}} "github.com/brayancruces/culqi-go/{{recurso}}"
+    "github.com/brayancruces/culqi-go"
+    "github.com/brayancruces/culqi-go/{{recurso}}"
 )
 ```
 
-> **Nota:** Una vez importado  el `culqi-go`, también es necesario importar el paquete del recurso o los recursos que vamos a utilizar (Token, Charge, Plan, Suscription o Refund).  
+> **Nota:** Una vez importado  el `culqi-go`, también es necesario importar el paquete del recurso o los recursos que vamos a utilizar (token, charge, plan, suscription o refund). Reemplazar `{{recurso}}` por el nombre del recurso.
 
 Realizando configuración del cliente
 ```go
