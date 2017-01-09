@@ -42,9 +42,20 @@ $ git clone git@github.com:brayancruces/culqi-golang.git
 
 ## Inicio rápido 
 
-Antes de comenzar a utilizar la biblioteca, inicialmente hay que configurar las credenciales del comercio (Código de Comercio y API Key).
+Antes de comenzar a utilizar la biblioteca, inicialmente hay que configurar las credenciales del comercio (Código de Comercio y API Key). 
+
+Importando culqi-go:
 
 ```go
+import (    
+    culqi "github.com/brayancruces/culqi-go"
+)
+```
+
+Realizando configuración del cliente
+```go
+func main() {
+
   // 1. Configuración
   config := &culqi.Config{
     MerchantCode:   "pk_test_xxx",  // Código de tu Comercio
@@ -54,6 +65,7 @@ Antes de comenzar a utilizar la biblioteca, inicialmente hay que configurar las 
 
   // 2. Crea un nuevo cliente
   client := culqi.New(config)
+}
 ```
 ### Crear un *token* 
 
