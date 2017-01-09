@@ -1,7 +1,9 @@
 # Culqi Go 
 
 
-[![License](https://poser.pugx.org/culqi/culqi-php/license)](https://packagist.org/packages/culqi/culqi-php)
+[![License](https://poser.pugx.org/culqi/culqi-php/license)](https://packagist.org/packages/culqi/culqi-php) 
+
+http://shields.io/
 
 ![](https://raw.githubusercontent.com/zeit/art/5824d39f6b3f714c51d40e8cdc4cb2673142527a/release/repo-banner.png)
 
@@ -22,11 +24,11 @@ Biblioteca de CULQI para el lenguaje Go (golang), pagos simples en tu sitio web.
 ## Instalación 
 
 
-### Vía {{gestor-de-dependencias}}
+### Vía "go get"
 
 
 ```bash
-npm install --save culqi-infinite
+go get -u github.com/brayancruces/go-lang
 ```
 
 
