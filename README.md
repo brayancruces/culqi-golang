@@ -10,7 +10,7 @@ http://shields.io/
 
 Biblioteca de CULQI para el lenguaje Go (golang), pagos simples en tu sitio web. Consume el Culqi API.
 
-| Versión actual|Culqi API|
+| Versión actual| Culqi API|
 |----|----|
 | 0.1.0 (09-01-2017) |v2 (ir a referencia)|
 
@@ -49,8 +49,11 @@ Importando culqi-go:
 ```go
 import (    
     culqi "github.com/brayancruces/culqi-go"
+    {{recurso}} "github.com/brayancruces/culqi-go/{{recurso}}"
 )
 ```
+
+> **Nota:** Una vez importado  el `culqi-go`, también es necesario importar el paquete del recurso o los recursos que vamos a utilizar (Token, Charge, Plan, Suscription o Refund).  
 
 Realizando configuración del cliente
 ```go
