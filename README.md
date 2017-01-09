@@ -5,7 +5,7 @@
 
 http://shields.io/
 
-![](https://raw.githubusercontent.com/zeit/art/5824d39f6b3f714c51d40e8cdc4cb2673142527a/release/repo-banner.png)
+![](http://i.imgur.com/Djajj50.png)
 
 
 Biblioteca de CULQI para el lenguaje Go (golang), pagos simples en tu sitio web. Consume el Culqi API.
