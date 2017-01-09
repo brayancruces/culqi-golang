@@ -162,7 +162,7 @@ Todos los cambios en las versiones de esta biblioteca están listados en [CHANGE
 
 ## Autor
 
-Brayan Cruces ([@theboss](https://github.com/brayancruces) - Team Culqi)  
+Brayan Cruces ([@brayancruces](https://github.com/brayancruces) - Team Culqi)  
 
 ## Todo 
 - Añadir más ejemplos 
