@@ -28,7 +28,7 @@ Biblioteca de CULQI para el lenguaje Go (golang), pagos simples en tu sitio web.
 
 
 ```bash
-go get -u github.com/brayancruces/go-lang
+go get github.com/brayancruces/go-lang
 ```
 
 
