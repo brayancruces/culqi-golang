@@ -44,17 +44,43 @@ $ git clone git@github.com:brayancruces/culqi-golang.git
 
 Antes de comenzar a utilizar la biblioteca, inicialmente hay que configurar las credenciales del comercio (Código de Comercio y API Key).
 
+```go
+  // 1. Configuración
+  config := &culqi.Config{
+    MerchantCode:   "pk_test_xxx",  // Código de tu Comercio
+    ApiKey:   "sk_test_xxx", // API Key
+    //ApiVersion: "v2",   // No es un parametro necesario, por defecto es la v2
+  }
 
+  // 2. Crea un nuevo cliente
+  client := culqi.New(config)
+```
 ### Crear un *token* 
 
 
-```
-Code
+```go
+  // 3. Parametros de creación de token
+  params := &token.TokenParams{
+    FirstName: "Brayan",
+    LastName: "Cruces",
+    Email: "brayancruces@gmail.com",
+    Currency: "PEN",
+    CardNumber: 4111111111111111,
+    Cvv: 123,
+    ExpMonth: 9,
+    ExpYear: 2020,
+  }
+
+  // 4. Crear Token
+  resp, err := token.Create(params, client)
+
+  if err != nil {
+      panic(err.Error())
+  }
 
 ```
 
-
-### Crear un *cargo* 
+### Crear un *cargo* (charge)
 
 ```
 Code
@@ -69,7 +95,7 @@ Code
 ```
 
 
-### Crear una *suscripción*   
+### Crear una *suscripción* (suscription)  
 
 ```
 Code
@@ -77,7 +103,7 @@ Code
 ```
 
 
-### Devolver un cargo 
+### Devolver un cargo (refund)
 
 ```
 Code
